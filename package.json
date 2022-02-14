@@ -1,0 +1,29 @@
+{
+  "name": "tailwind-dbz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "post": "postcss ./src/styles.css --output ./build/styles.css",
+    "postw": "postcss ./src/styles.css --output ./styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabit690/tailwind-dbz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabit690/tailwind-dbz/issues"
+  },
+  "homepage": "https://github.com/gabit690/tailwind-dbz#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.17",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^3.0.22"
+  }
+}
