@@ -1,0 +1,14 @@
+@keyframes typing {
+  from { width: 100% }
+  to { width: 0% }
+}
+
+@keyframes white-caret {
+  0%, 1% {border-right-color: transparent;}
+  2%, 100% {border-right-color: white;}
+}
+
+@keyframes black-caret {
+  0%, 1% {border-right-color: transparent;}
+  2%, 100% {border-right-color: black;}
+}

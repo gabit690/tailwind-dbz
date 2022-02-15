@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "post": "postcss ./src/styles.css --output ./build/styles.css",
+    "post": "postcss ./src/styles.css --output ./styles.css",
     "postw": "postcss ./src/styles.css --output ./styles.css --watch"
   },
   "repository": {

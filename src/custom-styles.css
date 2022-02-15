@@ -1,0 +1,7 @@
+.note {
+    @apply relative mx-auto font-mono w-fit;
+}
+
+.mask {
+    @apply absolute right-0 w-full;
+}
