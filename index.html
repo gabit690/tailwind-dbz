@@ -8,17 +8,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="relative min-h-screen mx-auto bg-gray-400">
-  <header class="mx-auto text-2xl">
+  <header class="mx-auto text-2xl bg-green-500 h-10">
     <!-- <h1 class="my-4 text-5xl text-center">Hoy presentamos</h1>
     <h2 class="mb-2 text-2xl italic text-center">Presiona el botón, <span class="uppercase">¡insecto!</span>.</h2> -->
-    <p class="note">The cat and the hats.<span class="mask animate-[typing_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_linear] border-r-4 border-transparent"></span></span></p>
-    <p class="note">The dog and the cats.<span class="mask animate-[typing_10s_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_10s_linear] border-r-4 border-transparent"></span></span></p>
+    <!-- <p class="note">The cat and the hats.<span class="mask animate-[typing_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_linear] border-r-4 border-transparent"></span></span></p>
+    <p class="note">The dog and the cats.<span class="mask animate-[typing_10s_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_10s_linear] border-r-4 border-transparent"></span></span></p> -->
   </header>
   <main>
-
+    <div class="drawing absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white container max-w-xs h-80">
+      <div class="capsule absolute w-28 h-full left-1/2 -translate-x-1/2">
+        <div class="absolute bg-red-100 top-0 left-1/2 -translate-x-1/2 h-[8%] w-3/4 border-4 border-black rounded"></div>
+        <div class="absolute bg-red-300 top-[8%] left-1/2 -translate-x-1/2 h-[6%] w-2/12 border-x-4 border-black"></div>
+        <div class="absolute bg-red-600 top-[14%] left-1/2 -translate-x-1/2 h-[6%] w-[45%] border-t-4 border-x-4 border-black rounded-t"></div>
+        <div class="absolute bg-white top-[20%] h-[18%] w-full rounded-t-[35px] border-t-4 border-x-4 border-black"></div>
+        <div class="absolute bg-blue-300 top-[38%] h-[44%] w-full"></div>
+        <div class="absolute bg-white top-[82%] h-[18%] w-full rounded-b-full border-b-4 border-x-4 border-black"></div>
+      </div>
+      <div class="explosion absolute outline outline-orange-500 w-52 h-52 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="smoke absolute bg-blue-400 w-full h-full bg-transparent"></div>
+      <div class="radar absolute bg-green-400 w-full h-full bg-transparent"></div>
+    </div>
   </main>
-  <footer class="absolute bottom-1 right-1">
-    <p class="">Copyright &copy; 2022 - <a class="underline hover:text-blue-500" href="#" target="_blank" rel="noopener noreferrer">Gabit</a>. All rights reserved</p>
+  <footer class="absolute bottom-1 right-2">
+    <p class="text-sm">Copyright &copy; 2022 - <a class="underline hover:text-blue-500" href="#" target="_blank" rel="noopener noreferrer">Gabit</a>. All rights reserved</p>
   </footer>
 </body>
 </html>
