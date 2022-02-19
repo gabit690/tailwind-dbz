@@ -16,7 +16,8 @@
   </header>
   <main>
     <div class="drawing absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white container max-w-xs h-80">
-      <div class="capsule absolute w-28 h-full left-1/2 -translate-x-1/2">
+      <!-- CAPSULE -->
+      <div class="capsule hidden absolute w-28 h-full left-1/2 -translate-x-1/2">
         <div class="absolute bg-red-100 top-0 left-1/2 -translate-x-1/2 h-[8%] w-3/4 border-4 border-black rounded"></div>
         <div class="absolute bg-red-300 top-[8%] left-1/2 -translate-x-1/2 h-[6%] w-2/12 border-x-4 border-black"></div>
         <div class="absolute bg-red-600 top-[14%] left-1/2 -translate-x-1/2 h-[6%] w-[45%] border-t-4 border-x-4 border-black rounded-t"></div>
@@ -24,9 +25,22 @@
         <div class="absolute bg-blue-300 top-[38%] h-[44%] w-full"></div>
         <div class="absolute bg-white top-[82%] h-[18%] w-full rounded-b-full border-b-4 border-x-4 border-black"></div>
       </div>
+      <!-- EXPLOSION -->
       <div class="explosion absolute outline outline-orange-500 w-52 h-52 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <!-- SMOKE -->
       <div class="smoke absolute bg-blue-400 w-full h-full bg-transparent"></div>
-      <div class="radar absolute bg-green-400 w-full h-full bg-transparent"></div>
+      <!-- RADAR -->
+      <div class="radar absolute w-full h-full bg-transparent">
+        <div class="absolute bg-white w-[20%] h-[7%] top-[5%] left-1/2 -translate-x-1/2 border-4 border-black rounded"></div>
+        <div class="absolute bg-white w-[8%] h-[4%] top-[12%] left-1/2 -translate-x-1/2 border-x-4 border-black"></div>
+        <div class="absolute bg-white w-[16%] h-[4%] top-[16%] left-1/2 -translate-x-1/2 border-t-4 border-x-4 border-black rounded"></div>
+        <div class="absolute bg-white w-[76%] h-[76%] top-[19%] left-1/2 -translate-x-1/2 rounded-full border-4 border-black">
+          <div class="radar-screen absolute w-[208px] h-[208px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-black bg-green-800">
+            <div class="light absolute w-[10px] h-[10px] bg-yellow-200  rounded-full top-[55px] left-[70px] -translate-x-1/2 -translate-y-1/2 animate-[blink_.75s_linear_infinite]"></div>
+            <div class="position-mark absolute w-[15px] h-[15px] bg-red-600 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "></div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="absolute bottom-1 right-2">

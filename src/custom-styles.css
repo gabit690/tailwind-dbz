@@ -5,3 +5,14 @@
 .mask {
     @apply absolute right-0 w-full;
 }
+
+.radar-screen {
+    background-size: 20px 20px;
+    background-image:
+    linear-gradient(to right, black 1px, transparent 1px, transparent 19px, black 19px),
+    linear-gradient(to bottom, black 1px, transparent 1px, transparent 19px, black 19px)
+}
+
+.position-mark {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
