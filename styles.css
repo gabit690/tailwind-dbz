@@ -26,6 +26,12 @@
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
+.explosion__particle {
+    background-image: radial-gradient(yellow 10%, orange 50%, red 80%);
+}
+
+/* Typewriting */
+
 @-webkit-keyframes typing {
   from { width: 100% }
   to { width: 0% }
@@ -66,9 +72,39 @@
   to {opacity: 1;}
 }
 
-/*
-! tailwindcss v3.0.22 | MIT License | https://tailwindcss.com
-*/
+/* Explosion */
+
+@-webkit-keyframes growth {
+  0%, 30% {
+    width: 0%;
+    height: 0%;
+  }
+  31%, 69% {
+    width: 75%;
+    height: 75%;
+  }
+  70%, 100% {
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@keyframes growth {
+  0%, 30% {
+    width: 0%;
+    height: 0%;
+  }
+  31%, 69% {
+    width: 75%;
+    height: 75%;
+  }
+  70%, 100% {
+    width: 0%;
+    height: 0%;
+  }
+}
+
+/* ! tailwindcss v3.0.22 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -575,6 +611,30 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 82%
 }
 
+.right-0 {
+    right: 0px
+}
+
+.bottom-\[0\%\] {
+    bottom: 0%
+}
+
+.top-\[30\%\] {
+    top: 30%
+}
+
+.left-\[30\%\] {
+    left: 30%
+}
+
+.left-\[70\%\] {
+    left: 70%
+}
+
+.top-\[70\%\] {
+    top: 70%
+}
+
 .top-\[5\%\] {
     top: 5%
 }
@@ -657,6 +717,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 13rem
 }
 
+.h-1\/3 {
+    height: 33.333333%
+}
+
+.h-2\/5 {
+    height: 40%
+}
+
+.h-1\/2 {
+    height: 50%
+}
+
 .h-\[7\%\] {
     height: 7%
 }
@@ -709,6 +781,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 13rem
 }
 
+.w-1\/3 {
+    width: 33.333333%
+}
+
+.w-2\/5 {
+    width: 40%
+}
+
+.w-1\/2 {
+    width: 50%
+}
+
 .w-\[20\%\] {
     width: 20%
 }
@@ -735,10 +819,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[15px\] {
     width: 15px
-}
-
-.w-\[1px\] {
-    width: 1px
 }
 
 .max-w-xs {
@@ -775,29 +855,19 @@ Ensure the default browser behavior of the `hidden` attribute.
             animation: white-caret 10s 10s linear
 }
 
-.animate-\[blink_5s_linear_infinite\] {
-    -webkit-animation: blink 5s linear infinite;
-            animation: blink 5s linear infinite
-}
-
-.animate-\[blink_3s_linear_infinite\] {
-    -webkit-animation: blink 3s linear infinite;
-            animation: blink 3s linear infinite
-}
-
-.animate-\[blink_1s_linear_infinite\] {
-    -webkit-animation: blink 1s linear infinite;
-            animation: blink 1s linear infinite
-}
-
-.animate-\[blink_\.5s_linear_infinite\] {
-    -webkit-animation: blink .5s linear infinite;
-            animation: blink .5s linear infinite
+.animate-\[growth_2s_linear_infinite\] {
+    -webkit-animation: growth 2s linear infinite;
+            animation: growth 2s linear infinite
 }
 
 .animate-\[blink_\.75s_linear_infinite\] {
     -webkit-animation: blink .75s linear infinite;
             animation: blink .75s linear infinite
+}
+
+.animate-\[growth_2s_linear\] {
+    -webkit-animation: growth 2s linear;
+            animation: growth 2s linear
 }
 
 .rounded {
@@ -888,6 +958,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(147 197 253 / var(--tw-bg-opacity))
 }
 
+.bg-blue-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216 / var(--tw-bg-opacity))
+}
+
+.bg-blue-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity))
+}
+
 .bg-blue-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(96 165 250 / var(--tw-bg-opacity))
@@ -905,11 +985,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-yellow-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(254 240 138 / var(--tw-bg-opacity))
-}
-
-.bg-blue-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(37 99 235 / var(--tw-bg-opacity))
 }
 
 .text-center {
@@ -942,14 +1017,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .underline {
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline
-}
-
-.outline {
-    outline-style: solid
-}
-
-.outline-orange-500 {
-    outline-color: #f97316
 }
 
 .hover\:text-blue-500:hover {

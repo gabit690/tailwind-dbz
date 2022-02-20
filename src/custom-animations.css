@@ -1,3 +1,5 @@
+/* Typewriting */ 
+
 @keyframes typing {
   from { width: 100% }
   to { width: 0% }
@@ -16,4 +18,21 @@
 @keyframes blink {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+/* Explosion */ 
+
+@keyframes growth {
+  0%, 30% {
+    width: 0%;
+    height: 0%;
+  }
+  31%, 69% {
+    width: 75%;
+    height: 75%;
+  }
+  70%, 100% {
+    width: 0%;
+    height: 0%;
+  }
 }

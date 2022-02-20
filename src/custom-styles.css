@@ -16,3 +16,7 @@
 .position-mark {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
+.explosion__particle {
+    background-image: radial-gradient(yellow 10%, orange 50%, red 80%);
+}
