@@ -20,3 +20,7 @@
 .explosion__particle {
     background-image: radial-gradient(yellow 10%, orange 50%, red 80%);
 }
+
+.smoke__particle {
+    background-image: radial-gradient(whitesmoke 30%, lightgrey);
+}
