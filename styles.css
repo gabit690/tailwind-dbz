@@ -94,14 +94,17 @@
   0% {
     width: 0%;
     height: 0%;
+    font-size: 0rem;
   }
   50% {
     width: 75%;
     height: 75%;
+    font-size: 8rem;
   }
   100% {
     width: 0%;
     height: 0%;
+    font-size: 0rem;
   }
 }
 
@@ -109,14 +112,17 @@
   0% {
     width: 0%;
     height: 0%;
+    font-size: 0rem;
   }
   50% {
     width: 75%;
     height: 75%;
+    font-size: 8rem;
   }
   100% {
     width: 0%;
     height: 0%;
+    font-size: 0rem;
   }
 }
 
@@ -685,6 +691,34 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 70%
 }
 
+.top-\[55\%\] {
+    top: 55%
+}
+
+.left-\[22\%\] {
+    left: 22%
+}
+
+.top-\[40\%\] {
+    top: 40%
+}
+
+.left-\[43\%\] {
+    left: 43%
+}
+
+.left-\[67\%\] {
+    left: 67%
+}
+
+.top-\[60\%\] {
+    top: 60%
+}
+
+.left-\[85\%\] {
+    left: 85%
+}
+
 .bottom-\[0\%\] {
     bottom: 0%
 }
@@ -937,6 +971,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.-rotate-45 {
+    --tw-rotate: -45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.rotate-\[20deg\] {
+    --tw-rotate: 20deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.rotate-\[30deg\] {
+    --tw-rotate: 30deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
 .scale-x-150 {
     --tw-scale-x: 1.5;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
@@ -972,9 +1021,9 @@ Ensure the default browser behavior of the `hidden` attribute.
             animation: pushed .3s linear
 }
 
-.animate-\[growth_1s_ease_infinite\] {
-    -webkit-animation: growth 1s ease infinite;
-            animation: growth 1s ease infinite
+.animate-\[growth_10s_ease_infinite\] {
+    -webkit-animation: growth 10s ease infinite;
+            animation: growth 10s ease infinite
 }
 
 .animate-\[smoking_1s_ease-in-out_infinite\] {
@@ -985,6 +1034,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .animate-\[blink_\.75s_linear_infinite\] {
     -webkit-animation: blink .75s linear infinite;
             animation: blink .75s linear infinite
+}
+
+.animate-\[growth_1s_ease_infinite\] {
+    -webkit-animation: growth 1s ease infinite;
+            animation: growth 1s ease infinite
+}
+
+.animate-\[growth_\.5s_ease_infinite\] {
+    -webkit-animation: growth .5s ease infinite;
+            animation: growth .5s ease infinite
+}
+
+.animate-\[growth_\.8s_ease_infinite\] {
+    -webkit-animation: growth .8s ease infinite;
+            animation: growth .8s ease infinite
+}
+
+.animate-\[growth_\.7s_ease_infinite\] {
+    -webkit-animation: growth .7s ease infinite;
+            animation: growth .7s ease infinite
+}
+
+.animate-\[growth_\.75s_ease_infinite\] {
+    -webkit-animation: growth .75s ease infinite;
+            animation: growth .75s ease infinite
 }
 
 .cursor-pointer {
@@ -1113,6 +1187,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-align: center
 }
 
+.font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
 .text-2xl {
     font-size: 1.5rem;
     line-height: 2rem
@@ -1136,6 +1214,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 8px
 }
 
+.text-9xl {
+    font-size: 8rem;
+    line-height: 1
+}
+
 .text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem
@@ -1155,6 +1238,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .italic {
     font-style: italic
+}
+
+.text-red-700 {
+    --tw-text-opacity: 1;
+    color: rgb(185 28 28 / var(--tw-text-opacity))
 }
 
 .underline {
