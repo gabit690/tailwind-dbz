@@ -8,37 +8,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="relative min-h-screen mx-auto bg-gray-400">
-  <header class="mx-auto text-2xl bg-green-500 h-10">
+  <header class="h-10 mx-auto text-2xl bg-green-500">
     <!-- <h1 class="my-4 text-5xl text-center">Hoy presentamos</h1>
     <h2 class="mb-2 text-2xl italic text-center">Presiona el botón, <span class="uppercase">¡insecto!</span>.</h2> -->
     <!-- <p class="note">The cat and the hats.<span class="mask animate-[typing_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_linear] border-r-4 border-transparent"></span></span></p>
     <p class="note">The dog and the cats.<span class="mask animate-[typing_10s_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_10s_linear] border-r-4 border-transparent"></span></span></p> -->
   </header>
   <main>
-    <div class="drawing absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white container max-w-xs h-80">
+    <div class="container absolute max-w-xs -translate-x-1/2 -translate-y-1/2 drawing top-1/2 left-1/2 outline h-80">
       <!-- CAPSULE -->
-      <div class="capsule hidden absolute w-28 h-full left-1/2 -translate-x-1/2">
-        <div class="absolute bg-red-100 top-0 left-1/2 -translate-x-1/2 h-[8%] w-3/4 border-4 border-black rounded"></div>
-        <div class="absolute bg-red-300 top-[8%] left-1/2 -translate-x-1/2 h-[6%] w-2/12 border-x-4 border-black"></div>
-        <div class="absolute bg-red-600 top-[14%] left-1/2 -translate-x-1/2 h-[6%] w-[45%] border-t-4 border-x-4 border-black rounded-t"></div>
-        <div class="absolute bg-white top-[20%] h-[18%] w-full rounded-t-[35px] border-t-4 border-x-4 border-black"></div>
-        <div class="absolute bg-blue-300 top-[38%] h-[44%] w-full"></div>
-        <div class="absolute bg-white top-[82%] h-[18%] w-full rounded-b-full border-b-4 border-x-4 border-black"></div>
+      <div class="absolute w-24 h-full -translate-x-1/2 capsule left-1/2">
+        <div class="capsule__button cursor-pointer absolute bg-white left-1/2 -translate-x-1/2 h-[8%] w-[70%]  border-4 border-black rounded shadow-[-7px_0px_10px_darkgray_inset] animate-[pushed_.3s_linear] z-10"></div>
+        <div class="absolute bg-white top-[8%] left-1/2 -translate-x-1/2 h-[6%] w-[25%] border-x-4 border-black shadow-[-7px_5px_10px_darkgray_inset]"></div>
+        <div class="absolute bg-white top-[14%] left-1/2 -translate-x-1/2 h-[6%] w-[40%] border-t-4 border-x-4 border-black rounded-t  shadow-[-7px_0px_10px_darkgray_inset]"></div>
+        <div class="absolute bg-white top-[20%] h-[18%] w-full rounded-t-[35px] border-t-4 border-x-4 border-black shadow-[-7px_5px_15px_darkgray_inset]"></div>
+        <div class="absolute bg-indigo-400 top-[38%] h-[44%] w-full border-4 border-black flex flex-col justify-around">
+          <p class="text-3xl font-black text-center uppercase">rdr</p>
+          <div class="">
+            <div class="bg-white w-[60px] h-[60px] mx-auto rounded-full relative border-2 border-black">
+              <div class="absolute w-[52px] h-[52px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full border-8 border-black"></div>
+              <div class="absolute w-[32px] h-[32px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full border-8 border-black"></div>
+              <div class="absolute w-[50%] h-[5px] top-1/2 right-0 -translate-y-1/2 bg-white"></div>
+            </div>
+            <p class="uppercase text-center text-[10px] font-black">capsule</p>
+            <p class="uppercase text-[8px] text-center font-bold">corp.</p>
+          </div>
+        </div>
+        <div class="absolute bg-white top-[82%] h-[18%] w-full rounded-b-full border-b-4 border-x-4 border-black shadow-[-7px_-5px_15px_darkgray_inset]"></div>
       </div>
       <!-- EXPLOSION -->
       <div class="explosion absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[growth_1s_ease_infinite] hidden">
-        <div class="explosion__particle w-1/3 h-1/3 absolute left-1/2 -translate-x-1/2 rounded-full"></div>
-        <div class="explosion__particle w-1/3 h-1/3 absolute top-1/2 right-0 -translate-y-1/2 rounded-full"></div>
-        <div class="explosion__particle w-1/3 h-1/3 absolute top-1/2 -translate-y-1/2 rounded-full"></div>
-        <div class="explosion__particle w-1/3 h-1/3 absolute bottom-0 left-1/2 -translate-x-1/2 rounded-full"></div>
+        <div class="absolute w-1/3 -translate-x-1/2 rounded-full explosion__particle h-1/3 left-1/2"></div>
+        <div class="absolute right-0 w-1/3 -translate-y-1/2 rounded-full explosion__particle h-1/3 top-1/2"></div>
+        <div class="absolute w-1/3 -translate-y-1/2 rounded-full explosion__particle h-1/3 top-1/2"></div>
+        <div class="absolute bottom-0 w-1/3 -translate-x-1/2 rounded-full explosion__particle h-1/3 left-1/2"></div>
         <div class="explosion__particle w-2/5 h-2/5 absolute top-[30%] left-[30%] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
         <div class="explosion__particle w-2/5 h-2/5 absolute top-[30%] left-[70%] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
         <div class="explosion__particle w-2/5 h-2/5 absolute top-[70%] left-[30%] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
         <div class="explosion__particle w-2/5 h-2/5 absolute top-[70%] left-[70%] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
-        <div class="explosion__particle w-1/2 h-1/2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+        <div class="absolute w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full explosion__particle h-1/2 top-1/2 left-1/2"></div>
       </div>
       <!-- SMOKE -->
-      <div class="smoke absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full animate-[smoking_1s_ease-in-out_infinite]">
+      <div class="smoke absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full animate-[smoking_1s_ease-in-out_infinite] hidden">
         <div class="smoke__particle absolute w-1/4 h-1/4 top-1/2 -translate-y-1/2 rounded-full border-y-[10px] border-stone-300"></div>
         <div class="smoke__particle absolute w-1/4 h-1/4 top-1/2 right-0 -translate-y-1/2 rounded-full border-y-[10px] border-stone-300"></div>
         <div class="smoke__particle absolute w-[30%] h-[30%] left-1/2 -translate-x-1/2 rounded-full scale-x-150 border-y-[10px] border-stone-300"></div>
@@ -53,7 +64,7 @@
         <div class="smoke__particle absolute w-[30%] h-[30%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full scale-x-[2] border-y-[10px] border-stone-300"></div>
       </div>
       <!-- RADAR -->
-      <div class="radar hidden absolute w-full h-full bg-transparent">
+      <div class="absolute hidden w-full h-full bg-transparent radar">
         <div class="absolute bg-white w-[20%] h-[7%] top-[5%] left-1/2 -translate-x-1/2 border-4 border-black rounded"></div>
         <div class="absolute bg-white w-[8%] h-[4%] top-[12%] left-1/2 -translate-x-1/2 border-x-4 border-black"></div>
         <div class="absolute bg-white w-[16%] h-[4%] top-[16%] left-1/2 -translate-x-1/2 border-t-4 border-x-4 border-black rounded"></div>
