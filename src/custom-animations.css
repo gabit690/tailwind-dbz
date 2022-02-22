@@ -22,9 +22,19 @@
 
 /* push-button */
 
-@keyframes pushed {
+@keyframes capsule-pushed {
   0%, 100% {top:0%;}
   50% {top: 7%;}
+}
+
+@keyframes radar-pushed {
+  0%, 100% {top:5%;}
+  50% {top: 10%;}
+}
+
+@keyframes flu {
+  from {background-color: red;}
+  to {background-color: blue;}
 }
 
 /* Explosion */ 

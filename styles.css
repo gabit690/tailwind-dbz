@@ -78,14 +78,34 @@
 
 /* push-button */
 
-@-webkit-keyframes pushed {
+@-webkit-keyframes capsule-pushed {
   0%, 100% {top:0%;}
   50% {top: 7%;}
 }
 
-@keyframes pushed {
+@keyframes capsule-pushed {
   0%, 100% {top:0%;}
   50% {top: 7%;}
+}
+
+@-webkit-keyframes radar-pushed {
+  0%, 100% {top:5%;}
+  50% {top: 10%;}
+}
+
+@keyframes radar-pushed {
+  0%, 100% {top:5%;}
+  50% {top: 10%;}
+}
+
+@-webkit-keyframes flu {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+@keyframes flu {
+  from {background-color: red;}
+  to {background-color: blue;}
 }
 
 /* Explosion */
@@ -647,6 +667,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 50%
 }
 
+.bottom-1 {
+    bottom: 0.25rem
+}
+
+.right-2 {
+    right: 0.5rem
+}
+
 .top-\[8\%\] {
     top: 8%
 }
@@ -719,10 +747,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 85%
 }
 
-.bottom-\[0\%\] {
-    bottom: 0%
-}
-
 .top-\[5\%\] {
     top: 5%
 }
@@ -739,6 +763,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 19%
 }
 
+.top-\[40px\] {
+    top: 40px
+}
+
+.left-\[60px\] {
+    left: 60px
+}
+
 .top-\[55px\] {
     top: 55px
 }
@@ -747,12 +779,48 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 70px
 }
 
-.bottom-1 {
-    bottom: 0.25rem
+.top-\[45px\] {
+    top: 45px
 }
 
-.right-2 {
-    right: 0.5rem
+.left-\[150px\] {
+    left: 150px
+}
+
+.top-\[10px\] {
+    top: 10px
+}
+
+.left-\[100px\] {
+    left: 100px
+}
+
+.top-\[155px\] {
+    top: 155px
+}
+
+.left-\[40px\] {
+    left: 40px
+}
+
+.top-\[165px\] {
+    top: 165px
+}
+
+.left-\[160px\] {
+    left: 160px
+}
+
+.top-\[185px\] {
+    top: 185px
+}
+
+.left-\[80px\] {
+    left: 80px
+}
+
+.bottom-\[0\%\] {
+    bottom: 0%
 }
 
 .z-10 {
@@ -837,14 +905,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 50%
 }
 
-.h-1\/4 {
-    height: 25%
-}
-
-.h-\[30\%\] {
-    height: 30%
-}
-
 .h-\[7\%\] {
     height: 7%
 }
@@ -867,6 +927,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[15px\] {
     height: 15px
+}
+
+.h-1\/4 {
+    height: 25%
+}
+
+.h-\[30\%\] {
+    height: 30%
 }
 
 .min-h-screen {
@@ -921,14 +989,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%
 }
 
-.w-1\/4 {
-    width: 25%
-}
-
-.w-\[30\%\] {
-    width: 30%
-}
-
 .w-\[20\%\] {
     width: 20%
 }
@@ -955,6 +1015,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[15px\] {
     width: 15px
+}
+
+.w-1\/4 {
+    width: 25%
+}
+
+.w-\[30\%\] {
+    width: 30%
 }
 
 .max-w-xs {
@@ -996,6 +1064,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.animate-\[capsule-pushed_\.3s_linear_forwards\] {
+    -webkit-animation: capsule-pushed .3s linear forwards;
+            animation: capsule-pushed .3s linear forwards
+}
+
+.animate-\[radar-pushed_\.3s_linear_forwards\] {
+    -webkit-animation: radar-pushed .3s linear forwards;
+            animation: radar-pushed .3s linear forwards
+}
+
 .animate-\[typing_10s_steps\(21\)_forwards\] {
     -webkit-animation: typing 10s steps(21) forwards;
             animation: typing 10s steps(21) forwards
@@ -1016,49 +1094,19 @@ Ensure the default browser behavior of the `hidden` attribute.
             animation: white-caret 10s 10s linear
 }
 
-.animate-\[pushed_\.3s_linear\] {
-    -webkit-animation: pushed .3s linear;
-            animation: pushed .3s linear
+.animate-\[growth_\.8s_ease_forwards\] {
+    -webkit-animation: growth .8s ease forwards;
+            animation: growth .8s ease forwards
 }
 
-.animate-\[growth_10s_ease_infinite\] {
-    -webkit-animation: growth 10s ease infinite;
-            animation: growth 10s ease infinite
+.animate-\[blink_\.8s_ease-in-out_infinite\] {
+    -webkit-animation: blink .8s ease-in-out infinite;
+            animation: blink .8s ease-in-out infinite
 }
 
-.animate-\[smoking_1s_ease-in-out_infinite\] {
-    -webkit-animation: smoking 1s ease-in-out infinite;
-            animation: smoking 1s ease-in-out infinite
-}
-
-.animate-\[blink_\.75s_linear_infinite\] {
-    -webkit-animation: blink .75s linear infinite;
-            animation: blink .75s linear infinite
-}
-
-.animate-\[growth_1s_ease_infinite\] {
-    -webkit-animation: growth 1s ease infinite;
-            animation: growth 1s ease infinite
-}
-
-.animate-\[growth_\.5s_ease_infinite\] {
-    -webkit-animation: growth .5s ease infinite;
-            animation: growth .5s ease infinite
-}
-
-.animate-\[growth_\.8s_ease_infinite\] {
-    -webkit-animation: growth .8s ease infinite;
-            animation: growth .8s ease infinite
-}
-
-.animate-\[growth_\.7s_ease_infinite\] {
-    -webkit-animation: growth .7s ease infinite;
-            animation: growth .7s ease infinite
-}
-
-.animate-\[growth_\.75s_ease_infinite\] {
-    -webkit-animation: growth .75s ease infinite;
-            animation: growth .75s ease infinite
+.animate-\[smoking_1s_ease-in-out_forwards\] {
+    -webkit-animation: smoking 1s ease-in-out forwards;
+            animation: smoking 1s ease-in-out forwards
 }
 
 .cursor-pointer {
@@ -1164,18 +1212,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(129 140 248 / var(--tw-bg-opacity))
 }
 
-.bg-transparent {
-    background-color: transparent
-}
-
 .bg-green-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(22 101 52 / var(--tw-bg-opacity))
 }
 
-.bg-yellow-200 {
+.bg-yellow-300 {
     --tw-bg-opacity: 1;
-    background-color: rgb(254 240 138 / var(--tw-bg-opacity))
+    background-color: rgb(253 224 71 / var(--tw-bg-opacity))
 }
 
 .bg-red-600 {
@@ -1201,6 +1245,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1
 }
 
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+
 .text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem
@@ -1217,11 +1266,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-9xl {
     font-size: 8rem;
     line-height: 1
-}
-
-.text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem
 }
 
 .font-black {
