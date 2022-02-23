@@ -8,7 +8,7 @@ capsule.innerHTML = `
 <!-- CAPSULE UPPER BODY -->
 <div class="absolute bg-white top-[20%] h-[18%] w-full rounded-t-[35px] border-t-4 border-x-4 border-black shadow-[-7px_5px_15px_darkgray_inset]"></div>
 <!--  CAPSULE TAG -->
-<div class="absolute bg-indigo-400 top-[38%] h-[44%] w-full border-4 border-black flex flex-col justify-around">
+<div class="absolute bg-blue-800 top-[38%] h-[44%] w-full border-4 border-black flex flex-col justify-around">
   <!-- TAG CODE -->
   <p class="text-3xl font-black text-center uppercase">rdr</p>
   <!-- CAPSULE LOGO -->

@@ -1,6 +1,5 @@
 const radar = document.createElement('div');
 radar.classList.add('w-full', 'h-full');
-radar.setAttribute('id', 'radar');
 radar.innerHTML = `
 <!-- RADAR PUSH-BUTTON -->
 <div id="radar__button" class="absolute bg-white w-[20%] h-[7%] top-[5%] left-1/2 -translate-x-1/2 border-4 border-black rounded cursor-pointer z-10 shadow-[-7px_0px_10px_darkgray_inset]"></div>

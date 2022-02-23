@@ -7,19 +7,17 @@
   <title>Tailwind Practice</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="relative min-h-screen mx-auto bg-gray-400">
-  <header class="h-10 mx-auto text-2xl bg-green-500">
-    <!-- <h1 class="my-4 text-5xl text-center">Hoy presentamos</h1>
-    <h2 class="mb-2 text-2xl italic text-center">Presiona el botón, <span class="uppercase">¡insecto!</span>.</h2> -->
-    <!-- <p class="note">The cat and the hats.<span class="mask animate-[typing_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_linear] border-r-4 border-transparent"></span></span></p>
-    <p class="note">The dog and the cats.<span class="mask animate-[typing_10s_10s_steps(21)_forwards] bg-gray-400"><span class="animate-[white-caret_10s_10s_linear] border-r-4 border-transparent"></span></span></p> -->
+<body class="relative min-w-[320px] min-h-[600px] h-screen mx-auto bg-sky-300">
+  <header class="mx-auto text-2xl">
+    <h1 class="py-4 text-3xl font-black text-center sm:text-5xl">Hoy presentamos</h1>
+    <h2 class="mb-2 text-xl note sm:text-3xl">Pulsa el botón... <span class="uppercase">¡insecto!</span><span class="mask animate-[typing_4s_1s_steps(27)_forwards] bg-sky-300"><span class="animate-[blue-caret_4s_1s_linear] border-r-4 border-transparent"></span></span></h2>
   </header>
   <main>
     <div id="drawing" class="container absolute max-w-xs -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-80">
     </div>
   </main>
   <footer class="absolute bottom-1 right-2">
-    <p class="text-sm">Copyright &copy; 2022 - <a class="underline hover:text-blue-500" href="#" target="_blank" rel="noopener noreferrer">Gabit</a>. All rights reserved</p>
+    <p class="text-sm">Copyright &copy; 2022 - <a class="underline hover:text-white" href="https://twitter.com/Gabit90" target="_blank" rel="noopener noreferrer">Gabit</a>. All rights reserved</p>
   </footer>
   <script src="index.js" type="module"></script>
 </body>

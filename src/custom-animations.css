@@ -10,9 +10,9 @@
   2%, 100% {border-right-color: white;}
 }
 
-@keyframes black-caret {
+@keyframes blue-caret {
   0%, 1% {border-right-color: transparent;}
-  2%, 100% {border-right-color: black;}
+  2%, 100% {border-right-color: darkblue;}
 }
 
 @keyframes blink {
@@ -30,11 +30,6 @@
 @keyframes radar-pushed {
   0%, 100% {top:5%;}
   50% {top: 10%;}
-}
-
-@keyframes flu {
-  from {background-color: red;}
-  to {background-color: blue;}
 }
 
 /* Explosion */ 

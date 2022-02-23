@@ -1,6 +1,5 @@
 const explosion = document.createElement('div');
 explosion.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'animate-[growth_.3s_ease_forwards]', 'text-9xl');
-explosion.setAttribute('id', 'explosion');
 explosion.innerHTML = `
   <!-- EXPLOSION PARTICLES -->
   <div class="absolute w-1/3 -translate-x-1/2 rounded-full explosion__particle h-1/3 left-1/2"></div>
