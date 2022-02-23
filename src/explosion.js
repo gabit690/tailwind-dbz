@@ -1,5 +1,5 @@
 const explosion = document.createElement('div');
-explosion.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'animate-[growth_.8s_ease_forwards]', 'text-9xl');
+explosion.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'animate-[growth_.3s_ease_forwards]', 'text-9xl');
 explosion.setAttribute('id', 'explosion');
 explosion.innerHTML = `
   <!-- EXPLOSION PARTICLES -->

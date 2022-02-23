@@ -1,5 +1,5 @@
 const smoke = document.createElement('div');
-smoke.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'w-full', 'h-full', 'animate-[smoking_1s_ease-in-out_forwards]');
+smoke.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'w-full', 'h-full', 'animate-[smoking_3s_linear_forwards]', 'blur-[12px]', 'z-20');
 smoke.setAttribute('id', 'smoke');
 smoke.innerHTML = `
 <!-- SMOKE PARTICLES -->
